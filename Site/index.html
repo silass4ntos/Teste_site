@@ -5,71 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sites</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-<body>
+<body class="bg-black">
+
+    <header class="header">
+        <a href="" class="logo">Logo</a>
+        <nav class="navbar"> 
+            <a href="" class="active">Inicio</a>
+            <a href="" class="">Novidades</a>
+            <a href="" class="">Albuns</a>
+            
+        </nav>
+        <div>
+        </div>
+    </header>
+
+    <section class="links">
+        <div class="play">
+            <a href=""><i class='bx bx-play'></i> Escute agora</a>
+            <a href=""></a>
+        </div>
+        <div class="plataformas">
+            <a href=""><i class='bx bxl-spotify' ></i></a>
+            <a href=""><i class='bx bxl-deezer' ></i></a>
+            <a href=""><i class='bx bxl-youtube' ></i></a>
+        </div>
+    </section>
+    
+    <section class="conteudo">
+        <div class=" caixa">
+            <h1>Mente perigosa</h1>
+            <p>subtitulo aleatorio</p>
+        </div>
+    </section>
+
     <video autoplay loop poster="assets/video/video.mp4" class="bg-video">
         <source src="assets/video/video.mp4" type="video/mp4">
     </video>
-    <div class="content">
-
-        <div class="container">
-            <h1>titulo sla</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. A mollitia 
-                qui dolorum quo vero quas nesciunt quia incidunt quidem, totam deleniti 
-                sapiente, quis quos culpa, consectetur debitis porro asperiores omnis!
-            </p>
-        </div>
-        
-        <div class="container">
-            <h1>titulo sla</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. A mollitia 
-                qui dolorum quo vero quas nesciunt quia incidunt quidem, totam deleniti 
-                sapiente, quis quos culpa, consectetur debitis porro asperiores omnis!
-            </p>
-        </div>
-        <div class="container">
-            <h1>titulo sla</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. A mollitia 
-                qui dolorum quo vero quas nesciunt quia incidunt quidem, totam deleniti 
-                sapiente, quis quos culpa, consectetur debitis porro asperiores omnis!
-            </p>
-        </div>
-        
-    </div>
     <img src="assets/img/bart.png" alt=""class="last " id="scrolling-image">
-    <script>
-        const image = document.getElementById("scrolling-image");
-        let lastScrollTop = 0;
-
-        window.addEventListener("scroll", () => {
-            const scrollY = window.scrollY;
-            const startScroll = 100;
-            const stopScroll = 400;
-
-            let positionY = -scrollY / 2;
-
-            // Limita a posição da imagem para que ela não suba indefinidamente
-            positionY = Math.min(positionY, 0);
-
-            // Verifica a direção da rolagem
-            const isScrollingUp = scrollY < lastScrollTop;
-            lastScrollTop = scrollY;
-
-            // Define a posição vertical da imagem
-            if (isScrollingUp) {
-                // Se estiver rolando para cima, a imagem desce
-                image.style.bottom = `${positionY}px`;
-            } else {
-                // Se estiver rolando para baixo, a imagem sobe
-                image.style.bottom = `${positionY + 10}px`; // Ajuste a velocidade de subida aqui
-            }
-        });
-    </script>
-
-
 </body>
+<script>
+    const image = document.getElementById("scrolling-image");
+    let lastScrollTop = 0;
+
+    window.addEventListener("scroll", () => {
+        const scrollY = window.scrollY;
+        const startScroll = 100;
+        const stopScroll = 400;
+
+        let positionY = -scrollY / 2;
+
+        // Limita a posição da imagem para que ela não suba indefinidamente
+        positionY = Math.min(positionY, 0);
+
+        // Verifica a direção da rolagem
+        const isScrollingUp = scrollY < lastScrollTop;
+        lastScrollTop = scrollY;
+
+        // Define a posição vertical da imagem
+        if (isScrollingUp) {
+            // Se estiver rolando para cima, a imagem desce
+            image.style.bottom = `${positionY}px`;
+        } else {
+            // Se estiver rolando para baixo, a imagem sobe
+            image.style.bottom = `${positionY + 10}px`; // Ajuste a velocidade de subida aqui
+        }
+    });
+</script>
 <script src="Js/index.js"></script>
 </html>

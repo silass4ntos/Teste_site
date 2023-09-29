@@ -36,8 +36,8 @@ background-size: cover;
 {
     position: absolute;
     right: 0;
-    top: 40%;
-    transition: linear 2.4s;
+    margin-bottom: 200px;
+    transition: 6s;
     animation: go-back 3s infinite alternate;
 }
 @keyframes go-back
@@ -61,21 +61,21 @@ background-size: cover;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    z-index: 10;
 }
 
 .logo
 {
-    font-size: 25px;
+    font-size: 45px;
     text-decoration: none;
-    font-weight:900 ;
+    font-weight:900;
 }
 
 .navbar a
 {
     text-decoration:none;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 200;
     margin: 0 20px;
     transition: .3s;
 }
@@ -150,9 +150,9 @@ background-size: cover;
     border-color:red;
 }
 
-
-
-
+.play {
+    display: inline-block; /* Para que o elemento tenha o tamanho do seu conteúdo */
+  }
 .play a
 {
     display: inline-flex;
@@ -160,8 +160,10 @@ background-size: cover;
     justify-content: center;
     align-items: center;
 }
+
 .play a i
 {
+    color: inherit;
     justify-content: center;
     align-items: center;
     border: 2px solid;
@@ -171,37 +173,37 @@ background-size: cover;
     margin-inline: 10px;
 }
 
-.play a :hover,
-i :hover
+.play :hover
 {
     color: red;
 }
-
-.conteudo
+.contain
 {
-    font-family: 'Sedgwick Ave Display', cursive;
-    position: absolute;
-    top: 40%;
-    left: 10%;
-    width: auto;
-    padding: 0;
-    background: transparent;
     display: flex;
-    z-index: 100;
+    width: 100%;
+    justify-content: center; /* Centralizar horizontalmente o conteúdo */
 }
-
+.conteudo
+{  
+    font-family: 'Sedgwick Ave Display', cursive;
+    display: flex; /* Tornar o container um flex container */
+    justify-content: left; /* Centralizar horizontalmente o conteúdo */
+    align-items:center; /* Centralizar verticalmente o conteúdo */
+    width: 90%; /* Isso é opcional e depende da largura desejada para o container pai */
+    height: 100vh; /* Isso é opcional e depende da altura desejada para o container pai (100vh = altura da janela) */
+}
 .caixa h1
 {
-    font-size: 60px;
+    font-size: 90px;
     letter-spacing: 30px;
     font-weight: 900;
 }
 
 .caixa p
 {
-    opacity: 30%;
+    opacity: 50%;
     margin-top: 3%;
     letter-spacing: 30px;
     font-family: 'Courier New', Courier, monospace;
-    font-weight: lighter;
+    font-weight:lighter;
 }

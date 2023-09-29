@@ -8,6 +8,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body class="bg-black">
+    
 
     <header class="header">
         <a href="" class="logo">Logo</a>
@@ -23,27 +24,34 @@
 
     <section class="links">
         <div class="play">
-            <a href=""><i class='bx bx-play'></i> Escute agora</a>
-            <a href=""></a>
+            <a href=""><i class='bx bx-play'></i>Escute agora</a>
         </div>
         <div class="plataformas">
-            <a href=""><i class='bx bxl-spotify' ></i></a>
+            <a href=""><i class='bx bxl-spotify' ></i></span> </a>
             <a href=""><i class='bx bxl-deezer' ></i></a>
             <a href=""><i class='bx bxl-youtube' ></i></a>
         </div>
     </section>
     
-    <section class="conteudo">
-        <div class=" caixa">
-            <h1>Mente perigosa</h1>
-            <p>subtitulo aleatorio</p>
+    <section class="contain">
+        <div  class="conteudo">
+            <div class=" caixa">
+                <h1>Mente perigosa</h1>
+                <p>subtitulo aleatorio</p>
+            </div>
         </div>
     </section>
+    
 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    
+
+    <img src="assets/img/bart.png" alt=""class="last " id="scrolling-image">
     <video autoplay loop poster="assets/video/video.mp4" class="bg-video">
         <source src="assets/video/video.mp4" type="video/mp4">
     </video>
-    <img src="assets/img/bart.png" alt=""class="last " id="scrolling-image">
+    
 </body>
 <script>
     const image = document.getElementById("scrolling-image");
@@ -51,10 +59,10 @@
 
     window.addEventListener("scroll", () => {
         const scrollY = window.scrollY;
-        const startScroll = 100;
-        const stopScroll = 400;
+        const startScroll = 400;
+        const stopScroll = 800;
 
-        let positionY = -scrollY / 2;
+        let positionY = -scrollY / 1;
 
         // Limita a posição da imagem para que ela não suba indefinidamente
         positionY = Math.min(positionY, 0);

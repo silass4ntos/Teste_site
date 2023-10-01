@@ -4,7 +4,6 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-
     box-sizing: border-box;
     color: aliceblue;
 }
@@ -144,7 +143,6 @@ body {
 
 .play {
     display: inline-block;
-    /* Para que o elemento tenha o tamanho do seu conteúdo */
 }
 
 .play a {
@@ -173,21 +171,15 @@ body {
     display: flex;
     width: 100%;
     justify-content: center;
-    /* Centralizar horizontalmente o conteúdo */
 }
 
 .conteudo {
     font-family: 'Sedgwick Ave Display', cursive;
     display: flex;
-    /* Tornar o container um flex container */
     justify-content: left;
-    /* Centralizar horizontalmente o conteúdo */
     align-items: center;
-    /* Centralizar verticalmente o conteúdo */
     width: 90%;
-    /* Isso é opcional e depende da largura desejada para o container pai */
     height: 100vh;
-    /* Isso é opcional e depende da altura desejada para o container pai (100vh = altura da janela) */
 }
 
 .caixa h1 {

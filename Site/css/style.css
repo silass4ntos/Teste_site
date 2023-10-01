@@ -126,7 +126,6 @@ body {
     height: 40px;
     background: transparent;
     text-decoration: none;
-    transform: rotate(45deg);
     border: 2px solid transparent;
     transition: .5s;
 }
@@ -134,15 +133,18 @@ body {
 .plataformas a i {
     font-size: 30px;
     color: rgb(255, 255, 255);
-    transform: rotate(-45deg);
 }
 
 .plataformas :hover {
-    border-color: red;
+    transform:scale(1.21);
+    transition: .5s;
+    color: red;
+
 }
 
 .play {
     display: inline-block;
+
 }
 
 .play a {
@@ -150,6 +152,7 @@ body {
     text-decoration: none;
     justify-content: center;
     align-items: center;
+    transition: .5s;
 }
 
 .play a i {
@@ -165,6 +168,8 @@ body {
 
 .play :hover {
     color: red;
+    transform:scale(1.09);
+    transition: .5s;
 }
 
 .contain {
@@ -265,10 +270,6 @@ body {
         padding: 1px 0px 1px 3px;
         font-size: 35px;
         margin-inline: 10px;
-    }
-
-    .plataformas :checked {
-        border-color: red;
     }
 
     .header {

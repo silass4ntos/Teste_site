@@ -197,16 +197,7 @@ body {
 }
 
 @media (max-width: 992px) {
-    .bg-video {
-        position: fixed;
-        right: 0;
-        bottom: 0;
-        min-width: 100%;
-        min-height: 100%;
-        z-index: -1;
-        opacity: 100%;
-        background-size: cover;
-    }
+
     .last {
         bottom: 0;
         display: flex;

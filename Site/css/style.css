@@ -19,7 +19,7 @@ body {
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
-    z-index: -1;
+    z-index: -2;
     opacity: 30%;
     background-size: cover;
 }
@@ -198,7 +198,8 @@ body {
 
 @media (max-width: 992px) {
     .last {
-        z-index: -100;
+        opacity: 60%;
+        z-index: -1;
         bottom: 0;
         display: flex;
         position: absolute;

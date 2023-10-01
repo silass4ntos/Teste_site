@@ -126,7 +126,6 @@ body {
     height: 40px;
     background: transparent;
     text-decoration: none;
-    border: 2px solid transparent;
     transition: .5s;
 }
 
@@ -243,15 +242,12 @@ body {
         height: 40px;
         background: transparent;
         text-decoration: none;
-        transform: rotate(45deg);
-        border: 2px solid transparent;
         transition: .5s;
     }
 
     .plataformas a i {
         font-size: 30px;
         color: rgb(255, 255, 255);
-        transform: rotate(-45deg);
     }
 
     .play a {
@@ -265,7 +261,6 @@ body {
         color: inherit;
         justify-content: center;
         align-items: center;
-        border: 2px solid;
         border-radius: 50px;
         padding: 1px 0px 1px 3px;
         font-size: 35px;

@@ -197,7 +197,6 @@ body {
 }
 
 @media (max-width: 992px) {
-
     .last {
         bottom: 0;
         display: flex;

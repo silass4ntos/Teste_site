@@ -225,7 +225,7 @@ background-size: cover;
         position: fixed;
         bottom: 0;
         left: 0;
-        width: 99%;
+        width: 93%;
         padding: 20px 0;
         background: transparent;
         display: flex;
@@ -320,8 +320,9 @@ background-size: cover;
 
     .contain
 {
+    left: 0;
     display: flex;
-    width: 95%;
+    width: 80%;
     justify-content: center; /* Centralizar horizontalmente o conteúdo */
 }
 .conteudo
@@ -350,5 +351,4 @@ background-size: cover;
     font-family: 'Courier New', Courier, monospace;
     font-weight:lighter;
 }
-
   }

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
-*{
+
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -8,32 +9,29 @@
     color: aliceblue;
 }
 
-body
-{
+body {
     font-family: 'Courier New', Courier, monospace;
     background-color: black;
 }
 
-.bg-video
-{
-position: fixed;
-right: 0;
-bottom: 0;
-min-width: 100%;
-min-height: 100%;
-z-index: -1;
-opacity: 10%;
-background-size: cover;
+.bg-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    opacity: 10%;
+    background-size: cover;
 }
 
-.show{
+.show {
     opacity: 1;
     filter: blur(0);
     transition: all 1s;
 }
 
-.last
-{
+.last {
     bottom: 0;
     display: flex;
     position: absolute;
@@ -42,18 +40,18 @@ background-size: cover;
     transition: 6s;
     animation: go-back 3s infinite alternate;
 }
-@keyframes go-back
-{
+
+@keyframes go-back {
     0% {
         transform: translateY(-1px);
     }
-    100%{
+
+    100% {
         transform: translateY(40px);
     }
 }
 
-.header
-{
+.header {
     position: absolute;
     top: 0;
     left: 0;
@@ -66,16 +64,14 @@ background-size: cover;
     z-index: 10;
 }
 
-.logo
-{
+.logo {
     font-size: 50px;
     text-decoration: none;
-    font-weight:900;
+    font-weight: 900;
 }
 
-.navbar a
-{
-    text-decoration:none;
+.navbar a {
+    text-decoration: none;
     font-size: 20px;
     font-weight: 900;
     margin: 0 70px;
@@ -83,20 +79,18 @@ background-size: cover;
 }
 
 .navbar a:hover,
-.navbar a.active
-{
+.navbar a.active {
     color: rgb(218, 59, 62);
 }
 
-.social-media
-{
+.social-media {
     display: flex;
     justify-content: space-between;
     width: 100px;
     height: 40px;
 }
-.social-media a
-{
+
+.social-media a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -105,8 +99,7 @@ background-size: cover;
     text-decoration: none;
 }
 
-.links
-{
+.links {
     position: fixed;
     bottom: 0;
     right: 0;
@@ -119,15 +112,14 @@ background-size: cover;
     z-index: 100;
 }
 
-.plataformas
-{
+.plataformas {
     display: flex;
     justify-content: space-between;
     width: 170px;
     height: 40px;
 }
-.plataformas a
-{
+
+.plataformas a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -140,31 +132,29 @@ background-size: cover;
     transition: .5s;
 }
 
-.plataformas a i
-{
+.plataformas a i {
     font-size: 30px;
     color: rgb(255, 255, 255);
     transform: rotate(-45deg);
 }
 
-.plataformas :hover
-{
-    border-color:red;
+.plataformas :hover {
+    border-color: red;
 }
 
 .play {
-    display: inline-block; /* Para que o elemento tenha o tamanho do seu conteúdo */
-  }
-.play a
-{
+    display: inline-block;
+    /* Para que o elemento tenha o tamanho do seu conteúdo */
+}
+
+.play a {
     display: inline-flex;
     text-decoration: none;
     justify-content: center;
     align-items: center;
 }
 
-.play a i
-{
+.play a i {
     color: inherit;
     justify-content: center;
     align-items: center;
@@ -175,53 +165,57 @@ background-size: cover;
     margin-inline: 10px;
 }
 
-.play :hover
-{
+.play :hover {
     color: red;
 }
-.contain
-{
+
+.contain {
     display: flex;
     width: 100%;
-    justify-content: center; /* Centralizar horizontalmente o conteúdo */
+    justify-content: center;
+    /* Centralizar horizontalmente o conteúdo */
 }
-.conteudo
-{  
+
+.conteudo {
     font-family: 'Sedgwick Ave Display', cursive;
-    display: flex; /* Tornar o container um flex container */
-    justify-content: left; /* Centralizar horizontalmente o conteúdo */
-    align-items:center; /* Centralizar verticalmente o conteúdo */
-    width: 90%; /* Isso é opcional e depende da largura desejada para o container pai */
-    height: 100vh; /* Isso é opcional e depende da altura desejada para o container pai (100vh = altura da janela) */
+    display: flex;
+    /* Tornar o container um flex container */
+    justify-content: left;
+    /* Centralizar horizontalmente o conteúdo */
+    align-items: center;
+    /* Centralizar verticalmente o conteúdo */
+    width: 90%;
+    /* Isso é opcional e depende da largura desejada para o container pai */
+    height: 100vh;
+    /* Isso é opcional e depende da altura desejada para o container pai (100vh = altura da janela) */
 }
-.caixa h1
-{
+
+.caixa h1 {
     font-size: 90px;
     letter-spacing: 30px;
     font-weight: 900;
 }
 
-.caixa p
-{
+.caixa p {
     opacity: 60%;
     margin-top: 3%;
     letter-spacing: 30px;
     font-family: 'Courier New', Courier, monospace;
-    font-weight:lighter;
+    font-weight: lighter;
 }
+
 @media (max-width: 992px) {
-    .last
-{
-    bottom: 0;
-    display: flex;
-    position: absolute;
-    right: 0;
-    transition: 6s;
-    animation: go-back 3s infinite alternate;
-    width: 200px;
-}
-    .links
-    {
+    .last {
+        bottom: 0;
+        display: flex;
+        position: absolute;
+        right: 0;
+        transition: 6s;
+        animation: go-back 3s infinite alternate;
+        width: 200px;
+    }
+
+    .links {
         position: fixed;
         bottom: 0;
         left: 0;
@@ -233,16 +227,15 @@ background-size: cover;
         align-items: center;
         z-index: 100;
     }
-    
-    .plataformas
-    {
+
+    .plataformas {
         display: flex;
         justify-content: space-between;
         width: 150px;
         height: 40px;
     }
-    .plataformas a
-    {
+
+    .plataformas a {
         display: inline-flex;
         justify-content: center;
         align-items: center;
@@ -254,24 +247,21 @@ background-size: cover;
         border: 2px solid transparent;
         transition: .5s;
     }
-    
-    .plataformas a i
-    {
+
+    .plataformas a i {
         font-size: 30px;
         color: rgb(255, 255, 255);
         transform: rotate(-45deg);
     }
-    
-    .play a
-    {
+
+    .play a {
         display: inline-flex;
         text-decoration: none;
         justify-content: center;
         align-items: center;
     }
-    
-    .play a i
-    {
+
+    .play a i {
         color: inherit;
         justify-content: center;
         align-items: center;
@@ -282,12 +272,11 @@ background-size: cover;
         margin-inline: 10px;
     }
 
-    .plataformas :checked
-    {
-        border-color:red;
+    .plataformas :checked {
+        border-color: red;
     }
-    .header
-    {
+
+    .header {
         padding: 30px 7%;
         position: absolute;
         top: 0;
@@ -299,56 +288,52 @@ background-size: cover;
         align-items: center;
         z-index: 10;
     }
-    
-    .logo
-    {
+
+    .logo {
 
         font-size: 30px;
         text-decoration: none;
-        font-weight:900;
+        font-weight: 900;
     }
-    
-    .navbar a
-    {
+
+    .navbar a {
         align-items: center;
-        text-decoration:none;
+        text-decoration: none;
         font-size: 15px;
         font-weight: 800;
         margin: 0 10px;
         transition: .3s;
     }
 
-    .contain
-{
-    left: 0;
-    display: flex;
-    width: 80%;
-    justify-content: center; /* Centralizar horizontalmente o conteúdo */
-}
-.conteudo
-{  
-    padding: 0;
-    margin: 0;
-    font-family: 'Sedgwick Ave Display', cursive;
-    display: flex; /* Tornar o container um flex container */
-    justify-content: left; /* Centralizar horizontalmente o conteúdo */
-    align-items:center; /* Centralizar verticalmente o conteúdo */
-    width: 85%; /* Isso é opcional e depende da largura desejada para o container pai */
-    height: 80vh; /* Isso é opcional e depende da altura desejada para o container pai (100vh = altura da janela) */
-}
-.caixa h1
-{
-    font-size: 40px;
-    letter-spacing: 30px;
-    font-weight: 900;
-}
+    .contain {
+        left: 0;
+        display: flex;
+        width: 80%;
+        justify-content: center;
+    }
 
-.caixa p
-{
-    opacity: 50%;
-    margin-top: 3%;
-    letter-spacing: 10px;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight:lighter;
+    .conteudo {
+        padding: 0;
+        margin: 0;
+        font-family: 'Sedgwick Ave Display', cursive;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        width: 85%;
+        height: 80vh;
+    }
+
+    .caixa h1 {
+        font-size: 40px;
+        letter-spacing: 30px;
+        font-weight: 900;
+    }
+
+    .caixa p {
+        opacity: 50%;
+        margin-top: 3%;
+        letter-spacing: 10px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: lighter;
+    }
 }
-  }

@@ -31,6 +31,7 @@ body {
 }
 
 .last {
+    opacity: 60%;
     bottom: 0;
     display: flex;
     position: absolute;
@@ -38,6 +39,7 @@ body {
     margin-bottom: 200px;
     transition: 6s;
     animation: go-back 3s infinite alternate;
+    z-index: -1;
 }
 
 @keyframes go-back {
@@ -69,21 +71,21 @@ body {
     font-weight: 900;
 }
 .logo img {
-    height: 60px;
-    padding-top: 10px;
+    height: 40px;
 }
 
 .navbar a {
+    vertical-align: middle;
     text-decoration: none;
-    font-size: 20px;
-    font-weight: 900;
-    margin: 0 70px;
-    transition: .3s;
+    font-size: 19px;
+    font-weight: bold;
+    margin: 0 45px;
 }
 
 .navbar a:hover,
 .navbar a.active {
     color: rgb(218, 59, 62);
+    transition: .2s;
 }
 
 .social-media {
@@ -140,9 +142,8 @@ body {
 
 .plataformas :hover {
     transform:scale(1.21);
-    transition: .5s;
+    transition: .3s;
     color: red;
-
 }
 
 .play {
@@ -156,6 +157,7 @@ body {
     justify-content: center;
     align-items: center;
     transition: .5s;
+    font-size: 16px;
 }
 
 .play a i {
@@ -206,6 +208,9 @@ body {
 
 @media (max-width: 992px) {
 
+    .logo img {
+        height: 25px;
+    }
     .last {
         opacity: 60%;
         z-index: -1;
@@ -272,7 +277,7 @@ body {
     }
 
     .header {
-        padding: 30px 7%;
+        padding: 0px ;
         position: absolute;
         top: 0;
         left: 0;
@@ -283,20 +288,15 @@ body {
         align-items: center;
         z-index: 10;
     }
-
-    .logo {
-
-        font-size: 30px;
-        text-decoration: none;
-        font-weight: 900;
+    .navbar{
+        margin-top: 25px;
     }
-
     .navbar a {
         align-items: center;
         text-decoration: none;
-        font-size: 15px;
-        font-weight: 800;
-        margin: 0 10px;
+        font-size: 13px;
+        font-weight: 600;
+        margin: 0 7px;
         transition: .3s;
     }
 
